@@ -1,3 +1,49 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav
+{
+    width: 100%;
+    background-color: grey;
+}
+nav>ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav li
+{
+    list-style-type: none;
+}
+nav>ul>li
+{
+    float: left;
+    position: relative;
+}
+nav>ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.submenu, label, input
+{
+    display: none;
+}
+nav a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a
+{
+    padding: 20px 30px;
+    color: white;
+}
+
 h1
 {
     color: red;
