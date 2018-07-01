@@ -1,2 +1,2 @@
 # visionneuse
-ceci est un exercice jquery de l'afpa
+ceci est un exercice d'entraînement jquery 
