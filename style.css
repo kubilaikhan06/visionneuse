@@ -43,6 +43,44 @@ nav > ul > li > a
     padding: 20px 30px;
     color: white;
 }
+nav > ul > li:hover a
+{
+    padding: 15px 30px 20px 30px;
+}
+nav li:hover .submenu
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li a
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+.submenu li
+{
+    border-bottom: 1px solid #CCC;
+    background-color: aquamarine;
+}
+.submenu li:hover a
+{
+    font-weight: bold;
+}
+.menu-html:hover, .menu-css:hover, .menu-js:hover
+{
+    border-top: 5px solid blue;
+    background-color: rgba(228, 77, 38, 0.15)
+}
+nav input[type=checkbox]:checked ~ ul
+{
+    display: block;
+}
 
 h1
 {
@@ -84,4 +122,35 @@ h1
 .btn:hover
 {
     background-color: yellow;
+}
+@media screen and (max-width: 780px)
+{
+    .menu-mobile
+    {
+        display: block;
+        color: white;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+
+    }
+    nav ul 
+    {
+        display: none;
+    }
+    nav ul li, nav ul li a 
+    {
+        width: 100%;
+        text-align: center;        
+    }
+    nav ul li a, nav ul li:hover a 
+    {
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu
+    {
+        display: block;
+        position: static;
+    }
+
 }
